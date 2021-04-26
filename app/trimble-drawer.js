@@ -10,7 +10,9 @@ export class TrimbleDrawer extends HTMLElement {
     constructor() {
         super();
         this.history = null;
-        this.data = (this.getAttribute('data') != "null" || null) ? this.getAttribute('data') : getData();
+        console.log(`get attribute data is ${this.getAttribute('data')}`);
+        this.data = (this.getAttribute('data') === "null" || null) ? getData() : this.getAttribute('data');
+        console.log(`the data is ${this.data}`);
         console.log(this.data);
         this.mountRef = this.getAttribute('mountRef');
         this.pushRef = this.getAttribute('pushRef');
