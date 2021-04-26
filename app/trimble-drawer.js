@@ -2,6 +2,7 @@ import { template } from './template';
 import { setStorage, constructChild } from './util';
 import { data } from './json/data';
 const getData = () => {
+    console.log(data);
     return data;
 };
 import './styles/styles.scss';
@@ -9,7 +10,8 @@ export class TrimbleDrawer extends HTMLElement {
     constructor() {
         super();
         this.history = null;
-        this.data = (this.getAttribute('data') != "null") ? this.getAttribute('data') : getData();
+        this.data = (this.getAttribute('data') != "null" || null) ? this.getAttribute('data') : getData();
+        console.log(this.data);
         this.mountRef = this.getAttribute('mountRef');
         this.pushRef = this.getAttribute('pushRef');
         setStorage('trimble-nav', this.data);
