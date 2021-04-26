@@ -1,8 +1,8 @@
 import { template } from './template';
 import { setStorage, constructChild } from './util';
+import { data } from './json/data';
 const getData = () => {
-    let jsonData = require('./json/data.json');
-    return jsonData.data;
+    return data;
 };
 import './styles/styles.scss';
 export class TrimbleDrawer extends HTMLElement {
@@ -13,8 +13,6 @@ export class TrimbleDrawer extends HTMLElement {
         this.mountRef = this.getAttribute('mountRef');
         this.pushRef = this.getAttribute('pushRef');
         setStorage('trimble-nav', this.data);
-    }
-    connectedCallback() {
         this.innerHTML = template;   
         this.querySelector('ul').innerHTML = this.data.map((item) => {
             return `<li id=${item.id} class="menu-list"><a href=${item.url} data-url=${item.url} class="menu-list-link">
@@ -28,6 +26,8 @@ export class TrimbleDrawer extends HTMLElement {
             </a></li>`
             // return `<li><a data-list='menu' target=${(item.self) ? '_self' : '_blank'} data-url=${item.url} href=${item.url}>${item.text}</a></li>`
         }).join('');   
+    }
+    connectedCallback() {        
         this.querySelector('#hamburger').addEventListener('click', (e) => {
             let retrieveMini = e.currentTarget.closest('.trimble-drawer');
             if (retrieveMini.classList.contains('mini')) {
