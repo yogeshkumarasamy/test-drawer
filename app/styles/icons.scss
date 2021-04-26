@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'icons-trimble-nav';
+    src:  url('../assets/fonts/icons-trimble-nav.eot?4zoat5');
+    src:  url('../assets/fonts/icons-trimble-nav.eot?4zoat5#iefix') format('embedded-opentype'),
+      url('../assets/fonts/icons-trimble-nav.ttf?4zoat5') format('truetype'),
+      url('../assets/fonts/icons-trimble-nav.woff?4zoat5') format('woff'),
+      url('../assets/fonts/icons-trimble-nav.svg?4zoat5#icons-trimble-nav') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="trimble-nav-"], [class*=" trimble-nav-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons-trimble-nav' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .trimble-drawer {
+    & span {
+      &[class^="trimble-nav"] {
+        color: #1976D2;
+        font-size: 21px;
+      }
+    }
+    & .trimble-nav-arrow-down:before {
+      content: "\e900";
+    }
+    & .trimble-nav-arrow-up:before {
+      content: "\e901";
+    }
+    & .trimble-nav-close:before {
+      content: "\e902";
+    }
+    & .trimble-nav-configurations:before {
+      content: "\e903";
+    }
+    & .trimble-nav-contracts-rates:before {
+      content: "\e904";
+    }
+    & .trimble-nav-documents:before {
+      content: "\e905";
+    }
+    & .trimble-nav-favorites:before {
+      content: "\e906";
+    }
+    & .trimble-nav-geography:before {
+      content: "\e907";
+    }
+    & .trimble-nav-hamburger:before {
+      content: "\e908";
+    }
+    & .trimble-nav-kpis:before {
+      content: "\e909";
+    }
+    & .trimble-nav-master-data:before {
+      content: "\e90a";
+    }
+    & .trimble-nav-network:before {
+      content: "\e90b";
+    }
+    & .trimble-nav-notifications:before {
+      content: "\e90c";
+    }
+    & .trimble-nav-operations:before {
+      content: "\e90d";
+    }
+    & .trimble-nav-permissions:before {
+      content: "\e90e";
+    }
+    & .trimble-nav-search:before {
+      content: "\e90f";
+    }
+  }
