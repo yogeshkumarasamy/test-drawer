@@ -1,19 +1,18 @@
 {
-  "name": "trimble-drawer-component",
+  "name": "drawer-component-sidebar",
   "version": "1.0.0",
   "author": "yogesh kumar",
-  "description": "Trimble Drawer Component",
+  "description": "Drawer Component sidebar",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/yogeshkumarasamy/test-drawer.git"
   },
-  "main": "app/index.js",
-  "bin": "app/index.js",
+  "main": "dist/main.js",
+  "bin": "dist/main.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --progress",
     "build": "cross-env NODE_ENV=production webpack"
   },
-  "private": true,
   "keywords": [],
   "license": "MIT",
   "devDependencies": {
@@ -38,6 +37,6 @@
     "webpack-cli": "4.2.0",
     "webpack-dev-server": "4.0.0-beta.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {},
+  "homepage": "https://github.com/yogeshkumarasamy/test-drawer#readme"
 }

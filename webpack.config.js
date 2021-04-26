@@ -12,7 +12,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].bundle.js',
+    filename: '[name].js',
     publicPath: env == 'development' ? '/' : './'
   },
 
@@ -36,7 +36,7 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
-          env == 'development' ? 'style-loader' : MiniCssExtractPlugin.loader,
+          'style-loader',
           'css-loader',
           'sass-loader'
         ]

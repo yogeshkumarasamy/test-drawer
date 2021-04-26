@@ -1,9 +1,6 @@
-# Minimalist Webpack Boilerplate
+# Drawer Component
 
-## Instructions
-
-- Clone repo - `git clone ssh://git@bitbucket.trimble.tools/tcx-product/trimble.transportation.tms-shell.git`
-- navigate to the folder with this command  - `cd trimble.transportation.tms-shell`
+- Clone repo - `https://github.com/yogeshkumarasamy/test-drawer.git`
 - Install dependencies - `npm install`
 - Start the server - `npm start`
 - Navigate to `localhost:3500` in the browser
