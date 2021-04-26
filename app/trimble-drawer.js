@@ -9,7 +9,9 @@ import './styles/styles.scss';
 export class TrimbleDrawer extends HTMLElement {
     constructor() {
         super();
-        this.history = null;
+        this.history = null;           
+    }
+    connectedCallback() {  
         console.log(`get attribute data is ${this.getAttribute('data')}`);
         this.data = (this.getAttribute('data') === "null" || null) ? getData() : this.getAttribute('data');
         console.log(`the data is ${this.data}`);
@@ -29,9 +31,7 @@ export class TrimbleDrawer extends HTMLElement {
                     : ``}
             </a></li>`
             // return `<li><a data-list='menu' target=${(item.self) ? '_self' : '_blank'} data-url=${item.url} href=${item.url}>${item.text}</a></li>`
-        }).join('');   
-    }
-    connectedCallback() {        
+        }).join('');      
         this.querySelector('#hamburger').addEventListener('click', (e) => {
             let retrieveMini = e.currentTarget.closest('.trimble-drawer');
             if (retrieveMini.classList.contains('mini')) {
