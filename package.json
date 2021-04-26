@@ -1,13 +1,13 @@
 {
-  "name": "drawer-component-sidebar",
-  "version": "1.0.0",
+  "name": "fe-drawer-component",
+  "version": "1.0.1",
   "author": "yogesh kumar",
-  "description": "Drawer Component sidebar",
+  "description": "FE Drawer Component",
   "repository": {
     "type": "git",
     "url": "https://github.com/yogeshkumarasamy/test-drawer.git"
   },
-  "main": "dist/main.js",
+  "main": "index.js",
   "bin": "dist/main.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --progress",
